@@ -32,6 +32,7 @@
     <string-array name="entries_status_bar_battery">
         <item>Εικονίδιο (Προεπιλογή)</item>
         <item>Ποσοστό</item>
+        <item>Status Bar</item>
         <item>Κρυφό</item>
     </string-array>
 

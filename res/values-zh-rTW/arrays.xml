@@ -52,6 +52,7 @@
     <string-array name="entries_status_bar_battery">
         <item>圖示（預設）</item>
         <item>百分比</item>
+        <item>Status Bar</item>
         <item>隱藏</item>
     </string-array>
 

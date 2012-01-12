@@ -230,6 +230,7 @@
     <string-array name="entries_status_bar_battery">
         <item>Иконка (По умолчанию)</item>
         <item>Процентный</item>
+        <item>Status Bar</item>
         <item>Скрытый</item>
     </string-array>
 

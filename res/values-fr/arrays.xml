@@ -182,6 +182,7 @@
     <string-array name="entries_status_bar_battery">
         <item>Icône (défaut)</item>
         <item>Pourcentage</item>
+        <item>Status Bar</item>
         <item>Cachée</item>
     </string-array>
 

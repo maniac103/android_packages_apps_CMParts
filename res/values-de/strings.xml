@@ -97,6 +97,8 @@
     <string name="ui_status_bar_clock_summary">Die Uhrzeit wird nicht angezeigt, wenn deaktiviert</string>
     <string name="ui_status_bar_battery_title">Batteriestatusanzeige</string>
     <string name="ui_status_bar_battery_summary">Anzeigestil des Batteriestatus</string>
+    <string name="ui_status_bar_battery_color_title">Akku-Leisten-Farbe</string>
+    <string name="ui_status_bar_battery_color_summary">Farbe der Statusleisten-Batteriestatus-Anzeige</string>
     <string name="ui_status_bar_compact_carrier_title">Kompakter Betreiber</string>
     <string name="ui_status_bar_compact_carrier_summary">Alternatives Layout des Benachrichtigungsbereichs mit kürzerem Betreibernamen</string>
     <string name="ui_status_bar_carrier_label_title">Betreibername</string>

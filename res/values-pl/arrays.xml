@@ -32,6 +32,7 @@
     <string-array name="entries_status_bar_battery">
         <item>Ikona (Domyślnie)</item>
         <item>Procentowo</item>
+        <item>Status Bar</item>
         <item>Ukryte</item>
     </string-array>
 

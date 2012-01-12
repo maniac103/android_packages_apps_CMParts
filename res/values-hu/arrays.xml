@@ -247,6 +247,7 @@
     <string-array name="entries_status_bar_battery">
         <item>Ikon (Alapértelmezett)</item>
         <item>Százalékos</item>
+        <item>Status Bar</item>
         <item>Rejtett</item>
     </string-array>
 
