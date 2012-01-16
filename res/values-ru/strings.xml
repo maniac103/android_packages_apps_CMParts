@@ -311,6 +311,10 @@
     <string name="pref_lockscreen_rotary_hide_arrows_summary">Скрывает стрелки-подсказки (для стиля Вращение)</string>
     <string name="pref_lockscreen_style_title">Стиль экрана блокировки</string>
     <string name="pref_lockscreen_style_summary">Выбор стиля экрана блокировки</string>
+    <string name="pref_rotary_style_title">Стиль вращения</string>
+    <string name="pref_rotary_style_summary">Выбор стиля вращающегося круга</string>
+    <string name="pref_ringlock_style_title">Стиль колец</string>
+    <string name="pref_ringlock_style_summary">Выбор стиля колец разблокировки</string>
     <string name="pref_in_call_style_title">Стиль входящего звонка</string>
     <string name="pref_in_call_style_summary">Выбор стиля виджета принять/отклонить входящего звонка</string>
     <string name="lockscreen_music_title">Управление музыкой</string>
@@ -439,6 +443,10 @@
     <!-- Performance Settings : VM Heap Size -->
     <string name="pref_heapsize_title">Размер VM heap</string>
     <string name="pref_heapsize_summary">Максимум допустимой памяти для VM heap (требуется перезагрузка)</string>
+
+    <!-- Performance : Disable bootanimation -->
+     <string name="pref_disable_bootanimation_title">Выкл. анимацию загрузки</string>
+     <string name="pref_disable_bootanimation_summary">Не показывать анимацию загрузки для более быстрого включения устройства</string>
 
     <!-- Performance : Lock home memory -->
     <string name="pref_lock_home_title">Блокировать рабочий стол в памяти</string>

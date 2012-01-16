@@ -291,6 +291,10 @@
     <string name="pref_lockscreen_rotary_hide_arrows_summary">在旋转风格时隐藏提示箭头</string>
     <string name="pref_lockscreen_style_title">锁屏风格</string>
     <string name="pref_lockscreen_style_summary">选择锁屏风格</string>
+    <string name="pref_rotary_style_title">旋转风格</string>
+    <string name="pref_rotary_style_summary">选择旋转轮的风格</string>
+    <string name="pref_ringlock_style_title">锁环风格</string>
+    <string name="pref_ringlock_style_summary">选择锁环风格</string>
     <string name="pref_in_call_style_title">来电屏幕风格</string>
     <string name="pref_in_call_style_summary">选择来电接听/拒绝的小插件风格</string>
     <string name="pref_volbtn_music_controls_title">音量键音乐控制</string>
@@ -402,6 +406,9 @@
     <!-- Performance Settings : VM Heap Size -->
     <string name="pref_heapsize_title">虚拟机内存大小</string>
     <string name="pref_heapsize_summary">设置每个虚拟机进程的可用内存最大值（需要重启）</string>
+
+    <string name="pref_disable_bootanimation_title">禁用开机动画</string>
+    <string name="pref_disable_bootanimation_summary">禁用开机动画以便快速开机</string>
 
     <!-- Performance : Lock home memory -->
     <string name="pref_lock_home_title">锁定桌面的内存</string>
