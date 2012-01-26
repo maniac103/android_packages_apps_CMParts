@@ -151,8 +151,8 @@ public class UIStatusBarActivity extends PreferenceActivity implements OnPrefere
             statusBarCarrierLabelCustom = "CyanogenMod 7";
             Settings.System.putString(getContentResolver(),
                     Settings.System.CARRIER_LABEL_CUSTOM_STRING,
-		    statusBarCarrierLabelCustom);
-	}
+                    statusBarCarrierLabelCustom);
+        }
 
         mStatusBarCarrierLabel.setValue(String.valueOf(statusBarCarrierLabel));
         mStatusBarCarrierLabel.setOnPreferenceChangeListener(this);
