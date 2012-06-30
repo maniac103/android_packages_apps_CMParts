@@ -37,6 +37,8 @@
 
     <string name="pref_electron_beam_animation_on">喚醒動畫</string>
     <string name="pref_electron_beam_animation_off">睡眠動畫</string>
+    <string name="pref_rotation_animation_title">旋轉動畫</string>
+    <string name="pref_rotation_animation_summary">需要重新啟動</string>
 
     <!-- User interface: Tablet tweaks -->
     <string name="tablet_tweaks_title_head">平板優化</string>
@@ -97,8 +99,16 @@
     <string name="ui_status_bar_clock_summary">在通知列顯示時鐘</string>
     <string name="ui_status_bar_battery_title">電池狀況風格</string>
     <string name="ui_status_bar_battery_summary">電池狀況的顯示風格</string>
+    <string name="ui_status_bar_battery_color_title">通知列電池狀況顏色</string>
+    <string name="ui_status_bar_battery_color_summary">通知列電池狀況的顯示顏色</string>
     <string name="ui_status_bar_compact_carrier_title">縮小電信業者名稱</string>
     <string name="ui_status_bar_compact_carrier_summary">使用替代的下拉通知列格式，將電信業者名稱縮小顯示</string>
+    <string name="ui_status_bar_carrier_label_title">電信業者名稱</string>
+    <string name="ui_status_bar_carrier_label_summary">更改電信業者名稱</string>
+    <string name="ui_status_bar_carrier_label_use_default">預設</string>
+    <string name="ui_status_bar_carrier_label_use_custom">自訂文字</string>
+    <string name="ui_status_bar_carrier_label_custom_title">自訂電信業者名稱</string>
+    <string name="ui_status_bar_carrier_label_custom_summary">用來替代電信業者名稱的文字</string>
     <string name="ui_status_bar_toggle_brightness">通知列控制亮度</string>
     <string name="ui_status_bar_toggle_brightness_summary">允許在通知列上滑動來調整亮度</string>
     <string name="ui_status_bar_toggle_info">自動亮度已啟用</string>
@@ -445,6 +455,14 @@
     <!-- Performance Settings : 16bpp Alpha -->
     <string name="pref_use_16bpp_alpha_title">使用 16 位元透明度</string>
     <string name="pref_use_16bpp_alpha_summary">能提升捲動效能，但或會導致圖像異常\n（需要重新啟動）</string>
+    
+    <!-- Performance Settings : Scrolling Cache -->
+    <string name="pref_scrollingcache_title">捲動快取</string>
+    <string name="pref_scrollingcache_summary">捲動快取可以提升捲動效能，但會使用較多的記憶體資源</string>
+    <string name="pref_scrollingcache_force_enable">強制啟用</string>
+    <string name="pref_scrollingcache_default_enable">預設啟用</string>
+    <string name="pref_scrollingcache_default_disable">預設關閉</string>
+    <string name="pref_scrollingcache_force_disable">強制關閉</string>
 
     <!-- Performance Settings : Purgeable Assets -->
     <string name="pref_purgeable_assets_title">允許清除資源</string>
@@ -453,6 +471,10 @@
     <!-- Performance Settings : VM Heap Size -->
     <string name="pref_heapsize_title">VM Heap 大小</string>
     <string name="pref_heapsize_summary">每一組虛擬機器的堆積記憶體上限值\n（需要重新啟動）</string>
+    
+    <!-- Performance : Disable bootanimation -->
+    <string name="pref_disable_bootanimation_title">關閉開機動畫</string>
+    <string name="pref_disable_bootanimation_summary">關閉開機動畫以加快開機速度</string>
 
     <!-- Performance : Lock home memory -->
     <string name="pref_lock_home_title">主介面常駐於記憶體</string>
@@ -580,6 +602,8 @@
     <string name="cm_sound_mode_soundVibrate">響鈴＋震動</string>
     <string name="pref_flash_mode_title">手電筒模式</string>
     <string name="pref_flash_mode_summary">選擇強／死光</string>
+    <string name="pref_mobiledatanetwork_mode_title">行動網路數據自動 2G/3G</string>
+    <string name="pref_mobiledatanetwork_mode_summary">行動網路數據按鈕切換 2G/3G 模式</string>
 
     <!-- Backlight -->
     <string name="backlight_title">自動亮度</string>
@@ -629,6 +653,11 @@
     <string name="sound_vibrate_in_call_title">通話中震動</string>
     <string name="sound_vibrate_in_call_summary_off">在通話期間作出的通知不會震動</string>
     <string name="sound_vibrate_in_call_summary_on">通知會如常震動</string>
+    <string name="sound_volume_key_beeps_title">音量鍵Beep聲</string>
+    <string name="sound_volume_key_beeps_summary_off">使用音量鍵改變音量時不要鳴響Beep聲</string>
+    <string name="sound_volume_key_beeps_summary_on">使用音量鍵改變音量時鳴響Beep聲</string>
+    <string name="sound_lock_volume_keys_title">鎖定音量鍵</string>
+    <string name="sound_lock_volume_keys_summary">防止靜音模式下因誤觸音量鍵而改變靜音模式</string>
     <string name="sound_camera_shutter_disable_title">相機快門靜音</string>
     <string name="sound_camera_shutter_disable_summary_on">將不會播放快門音效</string>
     <string name="sound_camera_shutter_disable_summary_off">將會播放快門音效</string>
