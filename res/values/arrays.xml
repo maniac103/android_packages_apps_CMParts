@@ -589,6 +589,26 @@
         <item>@string/gestures_flashlight</item>
     </string-array>
 
+    <string-array name="pref_lockscreen_long_key_press_entries" translatable="false">
+        <item>@string/gestures_no_action</item>
+        <item>@string/gestures_toggle_sound</item>
+        <item>@string/gestures_flashlight</item>
+        <item>@string/gestures_next</item>
+        <item>@string/gestures_previous</item>
+        <item>@string/gestures_playpause</item>
+        <item>@string/gestures_shortcut_or_activity</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_long_key_press_values" translatable="false">
+        <item></item>
+        <item>SOUND</item>
+        <item>FLASHLIGHT</item>
+        <item>NEXT</item>
+        <item>PREVIOUS</item>
+        <item>PLAYPAUSE</item>
+        <item>custom</item>
+    </string-array>
+
     <string-array name="pref_lockscreen_style_entries" translatable="false">
         <item>@string/lockscreen_style_entry_tabs</item>
         <item>@string/lockscreen_style_entry_rotary</item>

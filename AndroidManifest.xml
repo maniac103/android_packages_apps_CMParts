@@ -135,6 +135,13 @@
                 <category android:name="com.cyanogenmod.cmparts.SHORTCUT" />
             </intent-filter>
         </activity>
+        <activity android:name=".activities.LockscreenButtonActivity"
+            android:label="@string/pref_lockscreen_button_title">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.cyanogenmod.cmparts.SHORTCUT" />
+            </intent-filter>
+        </activity>
         <activity android:name=".activities.LockscreenTimeoutActivity"
             android:label="@string/pref_lockscreen_timeout_title">
             <intent-filter>

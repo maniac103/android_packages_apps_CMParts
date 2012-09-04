@@ -28,6 +28,14 @@
                 android:targetClass="com.cyanogenmod.cmparts.activities.LockscreenUnlockActivity" />
         </PreferenceScreen>
 
+        <PreferenceScreen android:key="lockscreen_buttons"
+            android:title="@string/pref_lockscreen_button_title"
+            android:summary="@string/pref_lockscreen_button_summary">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.cyanogenmod.cmparts"
+                android:targetClass="com.cyanogenmod.cmparts.activities.LockscreenButtonActivity" />
+        </PreferenceScreen>
+
         <PreferenceScreen android:key="lockscreen_gestures"
             android:title="@string/pref_lockscreen_gesture_title"
             android:summary="@string/pref_lockscreen_gesture_summary">

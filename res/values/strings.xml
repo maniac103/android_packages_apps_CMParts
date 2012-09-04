@@ -264,6 +264,8 @@
     <string name="pref_lockscreen_widgets_summary">Enable or disable various widgets on the lockscreen</string>
     <string name="pref_lockscreen_unlock_title">Unlock options</string>
     <string name="pref_lockscreen_unlock_summary">Controls button unlocking and quick unlock</string>
+    <string name="pref_lockscreen_button_title">Button options</string>
+    <string name="pref_lockscreen_button_summary">Controls button behaviour on lockscreen</string>
     <string name="pref_lockscreen_gesture_title">Lockscreen gestures</string>
     <string name="pref_lockscreen_gesture_summary">Enable and configure gestures on the lockscreen to control custom behavior</string>
     <string name="pref_lockscreen_timeout_title">Delay and timeout</string>
@@ -371,6 +373,10 @@
     <string name="pref_lockscreen_calendar_show_location_summary">Show event location under title</string>
     <string name="pref_lockscreen_calendar_show_description_title">Display event description</string>
     <string name="pref_lockscreen_calendar_show_description_summary">Show event description under title</string>
+    <string name="lockscreen_long_key_press_title">Long key press settings</string>
+    <string name="pref_lockscreen_long_press_home_title">Long press home action</string>
+    <string name="pref_lockscreen_long_press_menu_title">Long press menu action</string>
+    <string name="pref_lockscreen_long_press_search_title">Long press search action</string>
 
     <!-- Input Settings -->
     <string name="input_settings_title">Input settings</string>
@@ -744,6 +750,7 @@
     <string name="gestures_delete">Delete</string>
     <string name="gestures_delete_success">Gesture deleted</string>
     <string name="gestures_error_loading">Problem with gesture file operation.</string>
+    <string name="gestures_no_action">No action</string>
     <string name="gestures_unlock_only">Unlock phone</string>
     <string name="gestures_toggle_sound">Toggle sound</string>
     <string name="gestures_shortcut_or_activity">Shortcut or activity</string>
