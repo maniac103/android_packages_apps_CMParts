@@ -540,6 +540,14 @@
     <string name="pref_render_effect_title">Render effect</string>
     <string name="pref_render_effect_summary">Change what colors are used to draw the screen (potential battery savings)</string>
 
+    <string name="pref_render_colors_title">Color calibration</string>
+    <string name="pref_render_colors_summary">Fine-tune the calibration colors</string>
+
+    <string name="render_colors_reset">Reset</string>
+    <string name="render_color_red_title">Red</string>
+    <string name="render_color_green_title">Green</string>
+    <string name="render_color_blue_title">Blue</string>
+
     <string name="widget_name">RenderFX Widget</string>
     <string name="renderfx_temp">RenderFX</string>
     <string name="pref_widget_options_category_title">General options</string>

@@ -28,6 +28,7 @@ import android.provider.Settings;
 
 import com.cyanogenmod.cmparts.R;
 import com.cyanogenmod.cmparts.utils.SurfaceFlingerUtils;
+import com.cyanogenmod.cmparts.widgets.RenderColorPreference;
 
 public class UIActivity extends PreferenceActivity implements OnPreferenceChangeListener {
 
@@ -53,6 +54,8 @@ public class UIActivity extends PreferenceActivity implements OnPreferenceChange
 
     public static final String RENDER_EFFECT_PREF = "pref_render_effect";
 
+    public static final String RENDER_COLORS_PREF = "pref_render_colors";
+
     private static final String POWER_PROMPT_PREF = "power_dialog_prompt";
 
     private static final String SHARE_SCREENSHOT_PREF = "pref_share_screenshot";
@@ -66,6 +69,8 @@ public class UIActivity extends PreferenceActivity implements OnPreferenceChange
     private CheckBoxPreference mPowerPromptPref;
 
     private ListPreference mRenderEffectPref;
+
+    private RenderColorPreference mRenderColorPref;
 
     private CheckBoxPreference mShareScreenshotPref;
 
@@ -104,6 +109,8 @@ public class UIActivity extends PreferenceActivity implements OnPreferenceChange
         mPowerPromptPref = (CheckBoxPreference) prefSet.findPreference(POWER_PROMPT_PREF);
         mRenderEffectPref = (ListPreference) prefSet.findPreference(RENDER_EFFECT_PREF);
         mRenderEffectPref.setOnPreferenceChangeListener(this);
+        mRenderColorPref = (RenderColorPreference) prefSet.findPreference(RENDER_COLORS_PREF);
+        mRenderColorPref.setOnPreferenceChangeListener(this);
 
         /* Share Screenshot */
         mShareScreenshotPref = (CheckBoxPreference) prefSet.findPreference(SHARE_SCREENSHOT_PREF);
@@ -128,7 +135,11 @@ public class UIActivity extends PreferenceActivity implements OnPreferenceChange
     @Override
     protected void onResume() {
         super.onResume();
-        mRenderEffectPref.setValue(String.valueOf(SurfaceFlingerUtils.getActiveRenderEffect(this)));
+        SurfaceFlingerUtils.RenderEffectSettings renderSettings =
+                SurfaceFlingerUtils.getRenderEffectSettings(this);
+        mRenderEffectPref.setValue(String.valueOf(renderSettings.effectId));
+        updateRenderColorPrefState(renderSettings.effectId);
+        mRenderColorPref.setValue(renderSettings.getColorDefinition());
     }
 
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
@@ -170,6 +181,10 @@ public class UIActivity extends PreferenceActivity implements OnPreferenceChange
         if (preference == mRenderEffectPref) {
             int effectId = Integer.valueOf((String) newValue);
             SurfaceFlingerUtils.setRenderEffect(this, effectId);
+            updateRenderColorPrefState(effectId);
+            return true;
+        } else if (preference == mRenderColorPref) {
+            SurfaceFlingerUtils.setRenderColors(this, (String) newValue);
             return true;
         } else if (preference == mOverscrollPref) {
             int overscrollEffect = Integer.valueOf((String) newValue);
@@ -183,6 +198,10 @@ public class UIActivity extends PreferenceActivity implements OnPreferenceChange
             return true;
         }
         return false;
+    }
+
+    private void updateRenderColorPrefState(int effectId) {
+        mRenderColorPref.setEnabled(effectId >= 7 && effectId <= 9);
     }
 
     ColorPickerDialog.OnColorChangedListener mWidgetColorListener = new ColorPickerDialog.OnColorChangedListener() {

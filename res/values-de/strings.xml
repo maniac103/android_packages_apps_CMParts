@@ -540,6 +540,14 @@
     <string name="pref_render_effect_title">Render-Effekt</string>
     <string name="pref_render_effect_summary">Farben zum Zeichnen des Bildschirms wählen (kann Strom sparen)</string>
 
+    <string name="pref_render_colors_title">Farbkalibrierung</string>
+    <string name="pref_render_colors_summary">Kalibrierte Farben fein einstellen</string>
+
+    <string name="render_colors_reset">Zurücks.</string>
+    <string name="render_color_red_title">Rot</string>
+    <string name="render_color_green_title">Grün</string>
+    <string name="render_color_blue_title">Blau</string>
+
     <string name="widget_name">Rendereffekt-Widget</string>
     <string name="renderfx_temp">RenderFX</string>
     <string name="prefs_render_effect">Render-Effekt</string>
