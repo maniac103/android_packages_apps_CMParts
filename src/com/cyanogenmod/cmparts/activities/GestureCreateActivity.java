@@ -52,7 +52,9 @@ public class GestureCreateActivity extends Activity implements ShortcutPickHelpe
     private static final int ACTION_POSITION_NEXT = 3;
     private static final int ACTION_POSITION_PREVIOUS = 4;
     private static final int ACTION_POSITION_PLAYPAUSE = 5;
-    private static final int ACTION_POSITION_FLASHLIGHT = 6;
+    private static final int ACTION_POSITION_WIFI = 6;
+    private static final int ACTION_POSITION_BLUETOOTH = 7;
+    private static final int ACTION_POSITION_FLASHLIGHT = 8;
 
     private Gesture mGesture;
 
@@ -97,6 +99,12 @@ public class GestureCreateActivity extends Activity implements ShortcutPickHelpe
                         break;
                     case ACTION_POSITION_FLASHLIGHT:
                         pickFlashlight();
+                        break;
+                    case ACTION_POSITION_WIFI:
+                        pickWifi();
+                        break;
+                    case ACTION_POSITION_BLUETOOTH:
+                        pickBluetooth();
                         break;
                     case ACTION_POSITION_NEXT:
                         pickNext();
@@ -254,6 +262,20 @@ public class GestureCreateActivity extends Activity implements ShortcutPickHelpe
         mFriendlyName = getString(R.string.gestures_flashlight);
         mDrawLabel.setText(getString(R.string.gestures_draw_for_label, mFriendlyName));
         mUri = mFriendlyName + "___FLASHLIGHT";
+        disableCheckbox();
+    }
+
+    public void pickWifi() {
+        mFriendlyName = getString(R.string.gestures_toggle_wifi);
+        mDrawLabel.setText(getString(R.string.gestures_draw_for_label, mFriendlyName));
+        mUri = mFriendlyName + "___WIFI";
+        disableCheckbox();
+    }
+
+    public void pickBluetooth() {
+        mFriendlyName = getString(R.string.gestures_toggle_bluetooth);
+        mDrawLabel.setText(getString(R.string.gestures_draw_for_label, mFriendlyName));
+        mUri = mFriendlyName + "___BLUETOOTH";
         disableCheckbox();
     }
 

@@ -586,12 +586,16 @@
         <item>@string/gestures_next</item>
         <item>@string/gestures_previous</item>
         <item>@string/gestures_playpause</item>
+        <item>@string/gestures_toggle_wifi</item>
+        <item>@string/gestures_toggle_bluetooth</item>
         <item>@string/gestures_flashlight</item>
     </string-array>
 
     <string-array name="pref_lockscreen_long_key_press_entries" translatable="false">
         <item>@string/gestures_no_action</item>
         <item>@string/gestures_toggle_sound</item>
+        <item>@string/gestures_toggle_wifi</item>
+        <item>@string/gestures_toggle_bluetooth</item>
         <item>@string/gestures_flashlight</item>
         <item>@string/gestures_next</item>
         <item>@string/gestures_previous</item>
@@ -602,6 +606,8 @@
     <string-array name="pref_lockscreen_long_key_press_values" translatable="false">
         <item></item>
         <item>SOUND</item>
+        <item>WIFI</item>
+        <item>BLUETOOTH</item>
         <item>FLASHLIGHT</item>
         <item>NEXT</item>
         <item>PREVIOUS</item>

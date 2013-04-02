@@ -763,6 +763,8 @@
     <string name="gestures_toggle_sound">Klingelmodus</string>
     <string name="gestures_shortcut_or_activity">Verknüpfung oder Anwendung</string>
     <string name="gestures_flashlight">Taschenlampe</string>
+    <string name="gestures_toggle_wifi">WLAN umschalten</string>
+    <string name="gestures_toggle_bluetooth">Bluetooth umschalten</string>
     <string name="gestures_next">Nächster Titel</string>
     <string name="gestures_previous">Vorheriger Titel</string>
     <string name="gestures_playpause">Play/Pause</string>
